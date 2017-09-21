@@ -10,6 +10,6 @@ resource "google_compute_instance" "default" {
       }
   }
   network_interface {
-    subnet = "${var.subnet}"
+    subnetwork = "${var.subnetwork}"
   }
 }
