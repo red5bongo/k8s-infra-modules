@@ -3,7 +3,6 @@ variable "node_count" {
   default = "1"
 }
 
-variable "network" {
-  description = "The name of VPC to use"
-  default = "${google_compute_network.default.self_link}"
+variable "subnetwork" {
+  description = "The name of the subnet to use"
 }
