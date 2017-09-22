@@ -1,6 +1,6 @@
 resource "google_compute_instance" "default" {
   count = "${var.node_count}"
-  name           = "node-minion-${count.index}"
+  name           = "${var.name}-${count.index}"
   machine_type   = "g1-small"
   zone		 = "us-west1-a"
   tags = ["terraform"]

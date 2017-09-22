@@ -5,3 +5,7 @@ variable "node_count" {
 variable "subnetwork" {
   description = "The name of the subnet to use"
 }
+
+variable "name" {
+  description = "computer name for the minion node(s)"
+}
